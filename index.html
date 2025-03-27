@@ -25,6 +25,7 @@
 
 
 <!-- 
+---------------------------------------------------------------------------------------------------
  CATATAN PENTING COMAND 
  pastikan terminal yang di Visual code git bash bukan power shell
 
@@ -46,28 +47,54 @@
  git branch        = melihat list ada branch apa saja
  git branch (nama branch) = membuat sebuah branch
  git checkout      = perintah untuk berpindah antara branch
- git merge         = 
+ git merge         = menggabung kan beberapa git branch 
  git tag           = sebagai penanda versi, biasanya di gunakan acuan unduh v1, v2,v3 dll    
  
 
- Catatan : Setelah selesai mengubah code jangan lupa commit code nya kemudian push agar terdapat perubahan pada github jangan lupa bagian massege di isi deskrpsi terserah
--->   
+ # Catatan : Setelah selesai mengubah code jangan lupa commit code nya kemudian push agar terdapat perubahan pada github jangan lupa bagian massege di isi deskrpsi terserah
+
+----------------------------------------------------------------------------------------------
+ -->   
 
 <!--
 Materi Branch 
 Git branch adalah sebuah fitur pada Git yang memungkinkan pengguna untuk membuat cabang atau percabangan dari sebuah repositori. Dalam pengembangan perangkat lunak,
 cabang atau branch seringkali digunakan untuk memungkinkan beberapa pengembang bekerja pada bagian yang berbeda dari kode secara terpisah.
 
+* Cara membuat branch di github dan kita pull di vs code 
 Langkah Langkah : 
-pertama buat dulu branch di github nya disini saya dengan nama fitur-A
-kedua ambil branch di github ke local dengan perintah git fetch
-ketiga masuk kedalam branch yang kita buat di github dengan perintah git checkout fitur-A
-keempat lihat list terdapat branch apa saja dengan perintah git branch
+1.  buat dulu branch di github nya disini saya dengan nama fitur-A
+    lalu ambil branch di github ke vs code dengan perintah git branch origin fitur-A   
+2.  ambil branch di github ke local dengan perintah git fetch
+3.  lihat list terdapat branch apa saja dengan perintah git branch
+4.  masuk kedalam branch yang kita buat di github dengan perintah git checkout fitur-A
+5.  ketikkan peritah ls untuk melihat ada folder apa saja dalam branch yang kita buat 
 
 
+
+# Catatan
 jika ingin menghapus branch pastikan keluar dari branch nya contoh mau menhapus branch fitur-A 
 berarti harus keluar dari branch fitur-A pindah ke master dengan perintah git checkoout master kemudian
-hapus branch fitur-A dengan cara git branch -d fitur-A
+hapus branch fitur-A dengan cara git branch -D fitur-A
+------------------------------------------------------------------------------------------
+* MATERI Merge Branch ( Menggabungkan branch )
+1. git branch      ( untuk melihat ada branch apa saja ) -- disini saya punya branch master dan branch contact
+2. git checkout master   (disini saya pindah ke branch master)
+3. git merge contact     (untuk menggabungkan branch master dengan branch contact) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
